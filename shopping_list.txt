@@ -1,6 +1,6 @@
 leb x2
 jajca x15
 zejtin x2
-brasno x1
+seker x1
 mleko  x3
 
