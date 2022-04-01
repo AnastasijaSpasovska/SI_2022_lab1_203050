@@ -1,0 +1,132 @@
+->  Сите искористени команди:
+
+Command prompt:
+
+C:\Users\Ana>cd Desktop (одам на тој директориум)
+
+C:\Users\Ana\Desktop>mkdir SI_LAB1_2022 (креирам нов директориум)
+
+C:\Users\Ana\Desktop>cd SI_LAB1_2022 (го отворам ново креираниот директориум)
+
+C:\Users\Ana\Desktop\SI_LAB1_2022>git clone https://github.com/AnastasijaSpasovska/SI_2022_lab1_203050/   (правам клон на од remote репозиториумот од линкот во мојот локален репозиториум)
+
+C:\Users\Ana\Desktop\SI_LAB1_2022>cd SI_2022_lab1_203050 (го отворам директориумот)
+
+C:\Users\Ana\Desktop\SI_LAB1_2022\SI_2022_lab1_203050>git remote -v (проверувам со кои репозиториуми сум поврзанa)
+ 
+C:\Users\Ana\Desktop\SI_LAB1_2022\SI_2022_lab1_203050>git remote rm origin (се откачувам од remote репозиториумот со кој што беше поврзан локалниот репозиториум)
+
+C:\Users\Ana\Desktop\SI_LAB1_2022\SI_2022_lab1_203050>git remote  add origin https://github.com/AnastasijaSpasovska/SI_2022_lab1_203050.git (се поврзувам со мојот remote репо на github)
+  
+C:\Users\Ana\Desktop\SI_LAB1_2022\SI_2022_lab1_203050>git push --set-upstream origin master (со ова го поставувам upstream врската за сите идни push и pull автоматски)
+
+C:\Users\Ana\Desktop\SI_LAB1_2022\SI_2022_lab1_203050>git push -u origin (синхронизирање со локалниот репо на remote репозиториумот)
+
+C:\Users\Ana\Desktop\SI_LAB1_2022\SI_2022_lab1_203050>git pull origin ( истото но сега од ремоте репо кон локалниот репо, во овој случај не е потребно ама сепак го направив)
+
+- Одтука почнувам да користам Git-Bash
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~
+$ cd Desktop
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop
+$ cd SI_LAB1_2022
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022
+$ cd SI_2022_lab1_203050  (влегувам во директориумот)
+ SI
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git config --global user.email "anastasija.spasovska@students.finki.ukim.mk"
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git config --global user.name "AnastasijaSpasovska"
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050
+$ cat > shopping_list.txt (ја користам оваа команда бидејќи со истата и креирам фајл и почнувам да го менувам истиот)
+leb 
+jajca
+zejtin
+brasno 
+mleko
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git add shopping_list.txt (го ставам фајлот )
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git commit -m "Add 5 items to the shopping list"(правам комит со порака)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git push  (правам пуш за да ги прикачам на ремоте репо)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git add shopping_list.txt  (повторно го ставам на сцена изменетиот фајл)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git commit -m "Add quantities to the items"
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git push
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git branch branch1  (креирам гранка branch1)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git branch branch2 (креирам гранка branch2)
+
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git push origin branch1  (ја синхронизирам гранката branch1 со оддалечениот репозиториум)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git push origin branch2  (ја синхронизирам гранката branch2s со оддалечениот репозиториум)
+
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git checkout branch1 (се префрлувам на гранката branch1 )
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (branch1)
+$ git add shopping_list.txt  (го додавам на сцена променетиот фајл)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (branch1)
+$ git commit -m"Change quantity of item #5"(правам комит со порака)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (branch1)
+$ git push  (правам пуш за да ги прикачам на ремоте репо)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (branch1)
+$ git checkout master (се враќам на мастер гранката)
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (branch1)
+$ git add shopping_list.txt
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git commit -m "Change quantity of item #2"
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git push
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (master)
+$ git checkout branch2
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (branch2)
+$ git add shopping_list.txt
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (branch2)
+$ git commit -m "Modify item #4"
+
+Ana@DESKTOP-DHSVQE4 MINGW64 ~/Desktop/SI_LAB1_2022/SI_2022_lab1_203050 (branch2)
+$ git push --set-upstream origin branch2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
