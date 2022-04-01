@@ -1,1 +1,1 @@
-# SI_2022_lab1_203050
+# Anastasija Spasovska 203050
