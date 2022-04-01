@@ -1,5 +1,5 @@
 leb x2
-jajca x15
+jajca x20
 zejtin x3
 brasno  x1
 mleko x3
