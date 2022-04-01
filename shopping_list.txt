@@ -1,6 +1,6 @@
-leb
-jajca
-zejtin
-brasno
-mleko
-:wq
+leb x2
+jajca x15
+zejtin x2
+brasno x1
+mleko  x3
+
